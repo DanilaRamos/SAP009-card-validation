@@ -7,8 +7,10 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
+    
       <div class="caixa">
         <h1><img src="logo5.png"> FARO</h1>
 
@@ -22,8 +24,35 @@
   
       </div>
   </header>
-    <main></main>
-    <footer></footer>
+  
+  <main>
+    <ul class="descricao">
+        <div id="card">
+              <h2>Validar Cartão de Crédito</h2>
+                <img class="imagem-cartao" src="cartao.png">
+                <p>Validar o cartão do seu cliente e/ou usuário é de extrema importância para a integridade de seu estabelecimento.</p>
+               
+                <label for="cardNumber">Número do cartão</label>
+                <input type="text" name="cardInputNumber" id="cardNumber" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <br>
+                <br>
+                <label for="cardExpiry">Validade</label>
+                <input type="text" name="cardDateExpiry" id="cardExpiry" maxlength="5" placeholder="xx-xx">
+                <br>
+                <br>
+                <label for="cardCcv">Código de segurança</label>
+                <input type="text" name="CardCcvNumber" id="cardCcv" maxlength="3" placeholder="xxx">
+                <br>
+                <br>
+                <input type="submit" value="Validar" class="botton">
+          </div>
+     </ul>
+  </main>
+  
+  <footer>
+       <p class="copyright">&copy; Desenvolvido por Danila Ramos</p>
+  </footer>
+  
     <script src="index.js" type="module"></script>
   </body>
 </html>
