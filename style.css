@@ -1,0 +1,213 @@
+body {
+    font-family:open sans, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #f7db3f;
+    padding: 0.5px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+nav a:hover {
+    color: #B5B5B5;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* css corpo da página HOME */ 
+
+.descricao {
+    width: 450px;
+    margin: 0 auto;
+    padding: 110px 0;
+}
+
+.imagem-cartao {
+    width: 50%;
+}
+
+#card {
+    text-align: center;
+    width: 120%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 2em #000000;
+}
+
+.validade {
+    font-weight: bold;
+}
+
+.numero-cartao {
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.cvv {
+    font-weight: bold;
+}
+
+#enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: rgb(173, 171, 171);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background: #f7db3f;
+    transform: scale(1.2);
+}
+
+/*página SOBRE*/
+
+.titulo-principal {
+    text-align:center;
+    margin-top: 100px;
+    font-size: 20pt;
+}
+
+.text-principal {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.text-continuacao {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0px 5px 15px 5px
+}
+
+.cadeado {
+    width: 250px;
+    float: right;
+}
+
+/*página Duvidas*/
+
+.balao {
+    width: 230px;
+    float: right;
+}
+
+.duvida-validacao {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18pt;
+}
+
+.texto-validacao {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.duvida-onde {
+    text-align:center;
+    text-indent: 400px;
+    margin-top: 20px;
+    font-size: 18pt;
+}
+
+.texto-onde {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.duvida-porque {
+    text-align:center;
+    margin-top: 20px;
+    font-size: 18pt;
+}
+
+.texto-porque {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.duvida-cvv {
+    text-align:center;
+    margin-top: 20px;
+    font-size: 18pt;
+}
+
+.texto-cvv {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0px 5px 15px 5px
+}
+
+footer {
+    text-align: center;
+    background: url("preta.jpg");
+    padding: 50px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
