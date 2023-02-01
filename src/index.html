@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html lang="pt-br"></html>
+<html lang="pt-br">
 
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Validar cartão de crédito</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -12,7 +12,7 @@
     <header>
     
       <div class="caixa">
-        <h1><img src="logo5.png"> FARO</h1>
+        <h1><img src="logo5.png" alt="Detetive com lupa"> FARO</h1>
 
         <nav>
           <ul>
@@ -29,22 +29,19 @@
     <ul class="descricao">
         <div id="card">
               <h2>Validar Cartão de Crédito</h2>
-                <img class="imagem-cartao" src="cartao.png">
-                <p>Validar o cartão do seu cliente e/ou usuário é de extrema importância para a integridade de seu estabelecimento.</p>
+                <img class="imagem-cartao" src="cartao.png" alt="Cartão de crédito">
+                <p>Validar o cartão do seu cliente ou usuário é de extrema importância para a integridade de seu estabelecimento.</p>
                
-                <label for="cardNumber">Número do cartão</label>
-                <input type="text" name="cardInputNumber" id="cardNumber" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <label for="creditCardNumber" class="numero-cartao">Número do cartão</label>
+                <input type="text" name="cardInputNumber" id="creditCardNumber" maxlength="16"><br/>
                 <br>
+                <label for="cardExpiry" class="validade">Validade</label>
+                <input type="text" name="cardDateExpiry" id="cardExpiry" maxlength="5" placeholder="xx/xx"><br/>
                 <br>
-                <label for="cardExpiry">Validade</label>
-                <input type="text" name="cardDateExpiry" id="cardExpiry" maxlength="5" placeholder="xx-xx">
+                <label for="cardCcv" class="cvv">CVV</label>
+                <input type="text" name="CardCcvNumber" id="cardCcv" maxlength="3"><br/>
                 <br>
-                <br>
-                <label for="cardCcv">Código de segurança</label>
-                <input type="text" name="CardCcvNumber" id="cardCcv" maxlength="3" placeholder="xxx">
-                <br>
-                <br>
-                <input type="submit" value="Validar" class="botton">
+                <button id="enviar">Validar</button>
           </div>
      </ul>
   </main>

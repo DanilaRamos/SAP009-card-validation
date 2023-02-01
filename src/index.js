@@ -1,26 +1,25 @@
 import validator from './validator.js';
 
+const botton = document.getElementById("enviar");
+botton.addEventListener("click", validation)
+
 function validation () {
-    
-    let cardNumber = document.getElementById("cardNumber").value;
-    console.log(validator.isValid(cardNumber));
-    let number = document.querySelector("cardNumber");
+  const creditCardNumber = document.getElementById("creditCardNumber").value; //Perguntar o número do cartão
+  (validator.isValid(creditCardNumber));
 
-    if (cardNumber === "") {
-        alert("Preencha todos os campos")
-    }
+  if (creditCardNumber === "") { 
+    alert("Preencha todos os campos")
+  }
 
-    else if (isNaN(cardNumber)) {
-        alert("Digite somente números")
-    }
+  else if (isNaN(creditCardNumber)) {
+    alert("Digite somente números")
+  }
 
-    else if (!validator.isValid(cardNumber)) {
-        alert("Cartão inválido!")
-    }
+  else if (!validator.isValid(creditCardNumber)) {
+    alert("Cartão inválido!")
+  }
 
-    else {
-        alert("Cartão " + validator.maskify(cardNumber) + " válido!")
-    }
+  else {
+    alert(`Cartão ${validator.maskify(creditCardNumber)} válido!`)
+  }
 }
-
-console.log(validator);

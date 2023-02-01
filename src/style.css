@@ -67,7 +67,20 @@ nav a {
     box-shadow: 0 0 2em #000000;
 }
 
-.botton {
+.validade {
+    font-weight: bold;
+}
+
+.numero-cartao {
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.cvv {
+    font-weight: bold;
+}
+
+#enviar {
     width: 40%;
     padding: 15px 0;
     background: rgb(173, 171, 171);
@@ -80,7 +93,7 @@ nav a {
     cursor: pointer;
 }
 
-.botton:hover {
+#enviar:hover {
     background: #f7db3f;
     transform: scale(1.2);
 }
