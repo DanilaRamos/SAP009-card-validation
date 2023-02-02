@@ -1,4 +1,4 @@
-# <h1 align="center"> Cartão de Crédito Válido  - Algoritmo Luhn </h1>
+# Cartão de Crédito Válido  - Algoritmo Luhn
 
 ## Índice
 
@@ -40,7 +40,7 @@ os quatro últimos.
 * Implementar controle de versão com git (e a plataforma github)
 
 
-## 3. Descrição do projeto**
+## 3. Descrição do projeto
 
 Neste app para Web O [validar cartão de crédito](https://danilaramos.github.io/SAP009-card-validation/) permite que 
 empresas de todos os setores verifique a confiabilidade do cartão de crédito de seu cliente ou usuário, 
@@ -55,8 +55,7 @@ durante a venda e faturamento de sua empresa.
 
 ## 4. Autores
 
-Danila da Silva Ramos
-Visualize a página na íntegra. [pagina web](https://danilaramos.github.io/SAP009-card-validation/src/)
+Danila da Silva Ramos  [Visualize a página na íntegra](https://danilaramos.github.io/SAP009-card-validation/src/)
 
 
 
