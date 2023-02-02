@@ -1,22 +1,31 @@
 const validator = {
   isValid: function(creditCardNumber) {
+    const reversedCard = creditCardNumber.split("").reverse(); //A função reverse irá retornar os números da array ao contrário e o 
+    //split separa a string em uma lista ordenada.
 
     let sum = 0;
-    let shoulDouble = false;
 
-    for (let i = creditCardNumber.length - 1; i >= 0; i--) { // percorre os valores começando no lado mais à direita
-      let digit = parseInt(creditCardNumber[i]); //Fazer a soma do número inteiros
+    for (let i = 0; i < reversedCard.length; i++) {
+      const numCard = parseInt(reversedCard[i]) //Verfificar e somar os números inteiros, depois do loop retornar os números inverso.
 
-      if (shoulDouble % 2 === 0) { //Multiplicar os números 
-        if ((digit *= 2) > 9) //Após fazer a a multiplicação será necessário verificar se não há número maior que 9, caso haja é necessário 
-          digit - 9; //subtrair por 9
-      } 
+      if (i % 2 !== 0 && numCard >= 5) { //Multiplicar por 2 os números da posição par (maior que 5), se a soma for maior que 9, subtrair por 9
+        sum = sum + (numCard * 2) - 9;
+      }
 
-      sum += digit; //Somar os dígitos e novos dígitos
-      shoulDouble = !shoulDouble; 
-    } 
+      else if (i % 2 !== 0 && numCard <= 5) { //Multiplicar por 2 os números da posição par (menor que 5)
+        sum = sum + (numCard * 2);
+      }
+      else {
+        sum = sum + numCard; //Somar os dígitos e novos dígitos
+      }
 
-    return sum % 10 === 0; 
+    }
+    if (sum % 10 === 0) { //Dividir o total por 10 = 0
+      return true
+    }
+    else {
+      return false
+    }
   },
   
   maskify: function (value) {
